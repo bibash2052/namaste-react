@@ -1,0 +1,1 @@
+This repo is the part of the namaste react series.
