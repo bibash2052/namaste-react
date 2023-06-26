@@ -1,0 +1,19 @@
+#ptag {
+    color: red;
+    font-weight: 800;
+}
+
+#child1 {
+    background: yellow; 
+}
+#inner-child1 {
+    background: green;
+}
+
+#inner-child {
+    background: red;
+}
+
+#child {
+    background: cyan;
+}
