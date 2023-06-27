@@ -38,17 +38,17 @@ const parent = React.createElement("div", { id: "parent" }, [
   React.createElement("div", { id: "child" }, [
     React.createElement("h1", { key: "h1-key" }, "Child h1 content"),
     React.createElement("div", {id: "inner-child"}, [
-        React.createElement("h3", {key: "inner-child-h3"}, "Inner child1 h3"),
-        React.createElement("h4", {key: "inner-child-h4"}, "Inner child1 h4")
+        React.createElement("h3", {key: "inner-child-h3"}, "Inner child h3"),
+        React.createElement("h4", {key: "inner-child-h4"}, "Inner child h4")
     ]),
     React.createElement("h2", { key: "h2-key" }, "Child h2 content"),
   ]),
   React.createElement("div", { id: "child1" }, [
-    React.createElement("h1", { key: "h3-key" }, "Child1 h1 content"),
-    React.createElement("h2", { key: "h4-key" }, "Child1 h2 content"),
+    React.createElement("h1", { key: "h1-key-child1" }, "Child1 h1 content"),
+    React.createElement("h2", { key: "h2-key-child1" }, "Child1 h2 content"),
     React.createElement("div", {id: "inner-child1"}, [
-        React.createElement("h3", {key: "inner-child1-h1"}, "Inner child1 h1"),
-        React.createElement("h4", {key: "inner-child2-h2"}, "Inner child1 h2")
+        React.createElement("h3", {key: "inner-child1-h3"}, "Inner child1 h1"),
+        React.createElement("h4", {key: "inner-child1-h4"}, "Inner child1 h2")
     ] )
   ]),
 ]);
