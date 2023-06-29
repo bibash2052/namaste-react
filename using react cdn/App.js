@@ -1,12 +1,3 @@
-const heading = React.createElement(
-  "h1",
-  { id: "ptag" },
-  "This is the content for p tag"
-);
-// console.log(heading); // return an object
-const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(heading); // render method convert the object to respective tag
-
 /**
  *
  * <div id="parent">
@@ -52,5 +43,7 @@ const parent = React.createElement("div", { id: "parent" }, [
     ] )
   ]),
 ]);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
 console.log(parent);// returns an object
 root.render(parent);

@@ -1,7 +1,12 @@
-## React.createElement()
+## Why React is called react?
 #
-## It is creating an html tag inside react. It is an object.
-### This function will take three argument:
+- React is called "React" because of its core feature, which is its ability to   "react" or respond dynamically to changes in data.
+#
+
+### React.createElement()
+#
+- It is creating an html tag inside react. It is an object.
+- This function will take three argument:
     1. First argument is html tag to be created.
     2. Second argument is an object or it can be null where we will be providing attributes of the corresponding tag.
     3. Third argument is content of html tag
@@ -10,8 +15,7 @@
     React.createElement("h1", {id: "heading"}, "Hellow World!");
     React.createElement("h1", null, "Hello World!");
 
-
-### createElement returns a React element object with a few properties:
+- createElement returns a React element object with a few properties:
 
     1. type: The type you have passed.
 
@@ -26,12 +30,10 @@
 #
 ## ReactDOM.createRoot()
 #
-## It will create the container to hold all the element created by createElement in react to render.
-
-
+- It will create the container to hold all the element created by createElement in react to render.
 
 
 #
 ## render()
 #
-## It will render the content created by createElement.
+- It will render the content created by createElement.

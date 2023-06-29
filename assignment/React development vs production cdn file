@@ -1,0 +1,10 @@
+## What is the difference between react.development.js and react.production.js files via CDN?
+#
+- react.develpoment.js
+    - It is used during development phase.
+    - It includes the errors and warning messages to hep debugging the application.
+    - It has large file size as compared to production.
+
+- react.production.js
+    - It the optimized version of react for the production environment.
+    - Its size is smaller as compared to development version and has improved performance.
