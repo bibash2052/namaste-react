@@ -1,11 +1,5 @@
-const heading = React.createElement(
-  "h1",
-  { id: "ptag" },
-  "This is the content for p tag"
-);
-// console.log(heading); // return an object
-const root = ReactDOM.createRoot(document.getElementById("root"));
-// root.render(heading); // render method convert the object to respective tag
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 /**
  *
@@ -36,21 +30,23 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const parent = React.createElement("div", { id: "parent" }, [
   React.createElement("div", { id: "child" }, [
-    React.createElement("h1", { key: "h1-key" }, "Child h1 content"),
+    React.createElement("h1", { }, "Child h1 content"),
     React.createElement("div", {id: "inner-child"}, [
-        React.createElement("h3", {key: "inner-child-h3"}, "Inner child h3"),
-        React.createElement("h4", {key: "inner-child-h4"}, "Inner child h4")
+        React.createElement("h3", {}, "Inner child h3"),
+        React.createElement("h4", {}, "Inner child h4")
     ]),
-    React.createElement("h2", { key: "h2-key" }, "Child h2 content"),
+    React.createElement("h2", { }, "Child h2 content"),
   ]),
   React.createElement("div", { id: "child1" }, [
-    React.createElement("h1", { key: "h1-key-child1" }, "Child1 h1 content"),
-    React.createElement("h2", { key: "h2-key-child1" }, "Child1 h2 content"),
+    React.createElement("h1", {}, "Child1 h1 content"),
+    React.createElement("h2", {}, "Child1 h2 content"),
     React.createElement("div", {id: "inner-child1"}, [
-        React.createElement("h3", {key: "inner-child1-h3"}, "Inner child1 h1"),
-        React.createElement("h4", {key: "inner-child1-h4"}, "Inner child1 h2")
+        React.createElement("h3", {}, "Inner child1 h1"),
+        React.createElement("h4", {}, "Inner child1 h2")
     ] )
   ]),
 ]);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
 console.log(parent);// returns an object
 root.render(parent);
