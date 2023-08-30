@@ -4,7 +4,6 @@ import image from './food.jpeg';
 import data from './data.json';
 
 const ApplicationName = "Food App"
-const a = "<div>Hello</div>"
 const Header = () => {
     return (
         <nav className="bg-white border-gray-200 dark:bg-gray-900">
@@ -169,7 +168,6 @@ const Footer = () => {
     )
 }
 const AppLayout = () => {
-    console.log(a);
     return (
         <div className="app">
             {/* {Header()} */}
