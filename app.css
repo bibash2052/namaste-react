@@ -1,7 +1,11 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: rgb(17 24 39);
 }
 
 .header {
@@ -10,6 +14,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid black
 }
 
 .logo-container {
@@ -29,8 +34,10 @@ body {
 }
 
 .nav-items > ul > li {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: 400;
     padding: 10px;
     list-style: none;
 }
+
+
